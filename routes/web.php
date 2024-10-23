@@ -15,7 +15,7 @@ use App\Http\Controllers\AutenticaController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//Ruta '/' --> minimercado.test
+//Ruta '/' --> dietzen.test
 
 Route::view('/','inicio')->name('inicio');
 
@@ -40,5 +40,4 @@ Route::get('/perfil', [AutenticaController::class, 'perfil'])->name('perfil');
 Route::put('/perfil/{user}', [AutenticaController::class, 'perfilUpdate'])->name('perfil.update');
 //Ruta para cambiar la contraseña de usuario
 Route::put('/perfil/password/{user}', [AutenticaController::class, 'passwordUpdate'])->name('password.update');
-
 

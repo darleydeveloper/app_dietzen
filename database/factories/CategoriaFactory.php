@@ -17,8 +17,8 @@ class CategoriaFactory extends Factory
     public function definition(): array
     {
         return [
-            'nombre'=> $this->faker()->text(20),
-            'genero'=> $this->faker()->text(100)
+            'nombre'=> $this->faker->text(20),
+            'genero'=> $this->faker->text(100)
         ];
     }
 }

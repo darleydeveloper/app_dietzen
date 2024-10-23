@@ -7,15 +7,7 @@ use App\Models\Categoria;
 use Illuminate\Http\Request;
 
 class ProductoController extends Controller
-{
-    public function __construct()
-    {
-        //Sólo los usuarios autenticados y rol admin pueden acceder a todas las rutas de este controlador
-        //los usuarios autenticados y rol diferente de admin pueden acceder únicamente al método index de este controlador
-        $this->middleware('auth');
-        $this->middleware('admin')->except('index');
-    }
-    
+{   
     /**
      * Display a listing of the resource.
      */
@@ -42,8 +34,12 @@ class ProductoController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {
+    {       
         Producto::create($request->all());
+        //Guardar imagen
+        $producto = Producto::latest('id')->first();
+        $imageName= 'producto_'.$producto->id.'.'.$request->imagen->extension();
+        $request->imagen->move(public_path('images/productos'), $imageName);
         return redirect()->route('productos.index')->with('info', 'Producto creado con éxito');
     }
 
@@ -70,6 +66,17 @@ class ProductoController extends Controller
     public function update(Request $request, Producto $producto)
     {
         $producto->update($request->all());
+        //Actualizar imagen si existe
+        if ($request->imagen) {
+            $request->validate([
+                'imagen' => 'image|max:4096',
+            ],
+            [
+                'imagen.max' => 'La imagen del producto no debe pesar más de 4MB'
+            ]);
+            $imageName= 'producto_'.$producto->id.'.'.$request->imagen->extension();
+            $request->imagen->move(public_path('images/productos'), $imageName);
+        }
         return redirect()->route('productos.index')->with('info', 'Producto actualizado con éxito');
     }
 
@@ -79,6 +86,10 @@ class ProductoController extends Controller
     public function destroy(Producto $producto)
     {
         $producto->delete();
+        //eliminar imagen si existe
+        if (file_exists(public_path('images/productos/producto_'.$producto->id.'.jpg'))) {
+            unlink(public_path('images/productos/producto_'.$producto->id.'.jpg'));
+        }
         return redirect()->route('productos.index')->with('info', 'Producto eliminado con éxito');
     }
 }

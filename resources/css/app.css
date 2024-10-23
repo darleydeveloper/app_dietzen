@@ -198,9 +198,133 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
   transform: perspective(600px) rotateY(360deg);
 }
 
+/* Tarjeta producto catalogo*/
+
+section {
+  --card-height: 240px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+#catalogo{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #147979;
+}
+
+.cardcatalogo {
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 0 50px;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrappercatalogo {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.cardcatalogo:hover .wrappercatalogo {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrappercatalogo::before,
+.wrappercatalogo::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+.wrappercatalogo::before {
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+.wrappercatalogo::after {
+  bottom: 0;
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+
+.info_producto{
+  position: relative;
+  display: block;
+  width: 160px;
+  height: 500px;
+  margin-bottom: 5px;
+  background-color: brown;
+  left: 50px;
+}
+
+.cardcatalogo:hover .wrappercatalogo::before,
+.wrappercatalogo::after {
+  opacity: 1;
+}
+
+.cardcatalogo:hover .wrappercatalogo::after {
+  height: 120px;
+}
+/*.title {
+  width: 100%;
+  transition: transform 0.5s;
+}
+.card:hover .title {
+  transform: translate3d(0%, -50px, 100px);
+}*/
+
+.character {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+
+.cardcatalogo:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
 
 
+/* Formulario de registro*/
 
-
+.interlogueo{
+  box-shadow: 0 5px 10px #000;
+  background-color: #5297C4;
+  width: 64vh;
+  padding: 10px;
+  border-radius: 10px;
+}
 
 

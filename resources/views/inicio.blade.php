@@ -44,8 +44,7 @@
 <div class="disciplinas">
   <div class="card">
     <div class="face font">
-        <img src="{{ asset('images/assets/futbol_icono.avif')}}"
-          <h3>
+        <img src="{{ asset('images/assets/futbol_icono.avif')}}">
         <h3>Futbol</h3>
     </div>
     <div class="face back">
@@ -62,8 +61,7 @@
   </div>
   <div class="card">
     <div class="face font">
-        <img src="{{ asset('images/assets/basketball_icono.avif')}}"
-        <h3>
+        <img src="{{ asset('images/assets/basketball_icono.avif')}}">
         <h3>Baloncesto</h3>
     </div>
     <div class="face back">
@@ -80,8 +78,7 @@
   </div>
   <div class="card">
     <div class="face font">
-        <img src="{{ asset('images/assets/futsal_icono.avif')}}"
-        <h3>
+        <img src="{{ asset('images/assets/futsal_icono.avif')}}">
         <h3>Futbol Sala</h3>
     </div>
     <div class="face back">
@@ -98,8 +95,7 @@
   </div>
   <div class="card">
     <div class="face font">
-        <img src="{{ asset('images/assets/rugby_icono.avif')}}"
-        <h3>
+        <img src="{{ asset('images/assets/rugby_icono.avif')}}">
         <h3>Rugby</h3>
     </div>
     <div class="face back">
@@ -116,8 +112,7 @@
   </div>
   <div class="card">
     <div class="face font">
-        <img src="{{ asset('images/assets/tennis_icono.avif')}}"
-        <h3>
+        <img src="{{ asset('images/assets/tennis_icono.avif')}}">
         <h3>Tennis</h3>
     </div>
     <div class="face back">
@@ -134,8 +129,7 @@
   </div>
   <div class="card">
     <div class="face font">
-        <img src="{{ asset('images/assets/voleibol_icono.avif')}}"
-        <h3>
+        <img src="{{ asset('images/assets/voleibol_icono.avif')}}">
         <h3>Voleiball</h3>
     </div>
     <div class="face back">
@@ -150,8 +144,75 @@
         </div>
     </div>
   </div>
-
 </div>
-
+<!--CATÁLOGO DE PRODUCTOS-->
+<section id="catalogo">
+    <div class="catalogo_productos grid grid-cols-1 sm:grid-cols-4 lg:grid-cols3 gap-x-6 gap-y-0"">
+        <div class="prueba">
+            <div class="cardcatalogo">
+                <div class="wrappercatalogo">
+                <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">  
+                </div>
+                <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">{{ "Camiseta" }}</h2>
+                <div class="badge badge-outline">$50000</div>
+                <p>{{ "lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit am" }}</p>
+                <div class="card-actions justify-end">
+                  <a class="btn btn-outline btn-xs">Editar</a>
+                  <a class="btn btn-outline btn-xs">Eliminar</a>
+                <button class="btn btn-primary btn-accent badge-outline btn-xs">Compra ahora</button>
+                </div>
+            </div>
+        </div>
+        <div class="prueba">
+            <div class="cardcatalogo">
+                <div class="wrappercatalogo">
+                <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">  
+                </div>
+                <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">{{ "Camiseta" }}</h2>
+                <p>{{ "lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit am" }}</p>
+                <div class="card-actions justify-end">
+                <button class="btn btn-primary">Compra ahora</button>
+                </div>
+            </div>
+        </div>
+        <div class="prueba">
+            <div class="cardcatalogo">
+                <div class="wrappercatalogo">
+                <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">  
+                </div>
+                <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">{{ "Camiseta" }}</h2>
+                <p>{{ "lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit am" }}</p>
+                <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="prueba">
+            <div class="cardcatalogo">
+                <div class="wrappercatalogo">
+                <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">  
+                </div>
+                <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">{{ "Camiseta" }}</h2>
+                <p>{{ "lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit am" }}</p>
+                <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 @endsection
+

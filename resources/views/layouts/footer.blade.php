@@ -1,9 +1,10 @@
 <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
   <nav class="grid grid-flow-col gap-4">
-    <a class="link link-hover">About us</a>
-    <a class="link link-hover">Contact</a>
-    <a class="link link-hover">Jobs</a>
-    <a class="link link-hover">Press kit</a>
+    <a class="link link-hover"><span>Acerca de Nosotros</span></a>
+    <a class="link link-hover">Contáctanos</a>
+    <a class="link link-hover">Que dicen nuestros clientes...</a>
+    <a class="link link-hover">Porque elegirnos</a>
+    <a class="link link-hover">Te ayudamos</a>
   </nav>
   <nav>
     <div class="grid grid-flow-col gap-4">

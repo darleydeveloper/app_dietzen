@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('nombre');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('Nombre_Empresa_o_Club_Deportivo');
-            $table->string('Número_de_teléfono_de_contacto')->unique();
-            $table->string('Disciplina_deportiva_que_practica');
-            $table->string('password');
-            $table->string('addres');
+            $table->string('nombre_empresa_o_club_deportivo');
+            $table->string('número_de_teléfono_de_contacto')->unique();
+            $table->string('disciplina_deportiva_que_practica');
+            $table->string('dirección');
+            $table->string('contraseña');
             $table->string('rol');
             $table->rememberToken();
             $table->timestamps();

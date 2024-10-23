@@ -20,9 +20,11 @@ class ProductoFactory extends Factory
             'nombre'=> fake()->word(),
             'descripcion'=> fake()->text(),
             'precio'=> fake()->numberBetween(10000, 500000),
-            'tiempo_de_entrega'=> fake()->numberBetween(15, 30),
+            'tiempo_de_entrega'=> fake()->numberBetween(1, 30),
             'informacion_adicional'=> fake()->text(),
-            'categoria_id'-> $this=>faker->numberBetween(1, 10)
+            'etiqueta1'=> fake()->word(),
+            'etiqueta2'=> fake()->word(),
+            'categoria_id'-> fake()->numberBetween(1, 10)
         ];
     }
 }
