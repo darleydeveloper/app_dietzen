@@ -166,52 +166,7 @@
                 </div>
             </div>
         </div>
-        <div class="prueba">
-            <div class="cardcatalogo">
-                <div class="wrappercatalogo">
-                <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">  
-                </div>
-                <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
-            </div>
-            <div class="card-body">
-                <h2 class="card-title">{{ "Camiseta" }}</h2>
-                <p>{{ "lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit am" }}</p>
-                <div class="card-actions justify-end">
-                <button class="btn btn-primary">Compra ahora</button>
-                </div>
-            </div>
-        </div>
-        <div class="prueba">
-            <div class="cardcatalogo">
-                <div class="wrappercatalogo">
-                <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">  
-                </div>
-                <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
-            </div>
-            <div class="card-body">
-                <h2 class="card-title">{{ "Camiseta" }}</h2>
-                <p>{{ "lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit am" }}</p>
-                <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-                </div>
-            </div>
-        </div>
-        <div class="prueba">
-            <div class="cardcatalogo">
-                <div class="wrappercatalogo">
-                <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">  
-                </div>
-                <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
-            </div>
-            <div class="card-body">
-                <h2 class="card-title">{{ "Camiseta" }}</h2>
-                <p>{{ "lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit am" }}</p>
-                <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
+        
 </section>
 
 @endsection

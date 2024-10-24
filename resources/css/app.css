@@ -211,6 +211,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 5px 10px #000;
   background: #147979;
 }
 
@@ -224,6 +225,7 @@ section {
   padding: 0 36px;
   perspective: 2500px;
   margin: 0 50px;
+
 }
 
 .cover-image {

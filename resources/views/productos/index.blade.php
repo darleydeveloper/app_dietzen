@@ -2,83 +2,32 @@
 @section('titulo', 'Nuestros Productos')
 @section('cabecera', 'Listar Productos')
 
-<section id="catalogo">
-    <div class="catalogo_productos grid grid-cols-1 sm:grid-cols-4 lg:grid-cols3 gap-x-6 gap-y-10"">
-        <div class="prueba">
-            <div class="cardcatalogo">
-                <div class="wrappercatalogo">
-                <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">  
-                </div>
-                <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
+@section('contenido')
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-6">
+    @foreach($productos as $producto)
+        <div class="cardcatalogo">
+            <div class="wrappercatalogo">
+            <img src="https://picsum.photos/id/{{ $producto->id }}/240"/> 
             </div>
+            <img src="https://picsum.photos/id/{{ $producto->id }}/240"/> 
             <div class="card-body">
-                <h2 class="card-title">{{ "Camiseta" }}</h2>
-                <p>{{ "lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit am" }}</p>
-                <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-                </div>
+                <h2 class="card-title">{{ $productos->nombre}}</h2>
+                <div class="badge badge-outline">{{ $productos->precio}}</div>
+                <p>{{ Str::limit($productos->descripcion,150)}}</p>
+                <div class="badge badge-outline">{{ $productos->etiqueta1 }}</div>
+                <div class="badge badge-outline h-4 w-4 stroke-current">{{ $productos->etiqueta2 }}</div>
+            </div>
+            <div class="card-actions-justify-end">
+                <a href="{{ route('productos.edit', $producto->id) }}" class="btn btn-outline btn-xs">Editar</a>
+                <form action="{{ route('productos.destroy', $producto->id) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-outline btn-xs">Eliminar</button>
+                </form>
+                
+                <button class="btn btn-primary btn-accent badge-outline btn-xs">Comprar ahora</button>
             </div>
         </div>
-        <div class="prueba">
-            <div class="cardcatalogo">
-                <div class="wrappercatalogo">
-                <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">  
-                </div>
-                <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
-            </div>
-            <div class="card-body">
-                <h2 class="card-title">{{ "Camiseta" }}</h2>
-                <p>{{ "lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit am" }}</p>
-                <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-                </div>
-            </div>
-        </div>
-        <div class="prueba">
-            <div class="cardcatalogo">
-                <div class="wrappercatalogo">
-                <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">  
-                </div>
-                <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
-            </div>
-            <div class="card-body">
-                <h2 class="card-title">{{ "Camiseta" }}</h2>
-                <p>{{ "lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit am" }}</p>
-                <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-                </div>
-            </div>
-        </div>
-        <div class="prueba">
-            <div class="cardcatalogo">
-                <div class="wrappercatalogo">
-                <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">  
-                </div>
-                <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
-            </div>
-            <div class="card-body">
-                <h2 class="card-title">{{ "Camiseta" }}</h2>
-                <p>{{ "lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit am" }}</p>
-                <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-                </div>
-            </div>
-        </div>
-        <div class="prueba">
-            <div class="cardcatalogo">
-                <div class="wrappercatalogo">
-                <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">  
-                </div>
-                <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
-            </div>
-            <div class="card-body">
-                <h2 class="card-title">{{ "Camiseta" }}</h2>
-                <p>{{ "lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit am" }}</p>
-                <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
+    @endforeach 
+</div>
+@endsection('contenido')

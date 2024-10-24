@@ -13,7 +13,7 @@ class ProductoController extends Controller
      */
     public function index()
     {
-        $productos = Producto::orderBy('nombre')->get();
+        $productos = Producto::all();
         return view('productos.index', ['productos' => $productos]);
     }
 
