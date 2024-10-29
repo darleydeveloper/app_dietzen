@@ -5,10 +5,10 @@
 .typing{
     font-size: 26px;
     width: 1350px;   
-    animation: animacion 3s steps(40), transparent .5s step-end infinite alternate;
+    animation: animacion 8s steps(60), transparent .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    color:blueviolet;
+    color: #5297C4;
     border-right: 3px solid;
   }
   
@@ -29,6 +29,14 @@
   height: 50px;
 }
 
+.cinta_informativa{
+  width: 168vh;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, italic;
+  font-size: 18px;
+  justify-content: center;
+}
+
 .slider{
   background-color: black;
   height: 70vh;
@@ -46,8 +54,10 @@
   width: 220vh;
   height: 10vh;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
 }
 
 .btn-12{
@@ -64,8 +74,8 @@
   perspective: 230px;
 }
 .btn-12 span {
-  background: rgb(0,172,238);
-background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  background: rgb(179,236,236);
+  background: linear-gradient(0deg, rgb(137,236,218) 0%, rgb(64,224,208) 100%);
   display: block;
   position: absolute;
   width: 130px;
@@ -128,7 +138,7 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
   display:flex;
   align-items:center;
   justify-content:center;
-  min-height: 100vh;
+  min-height: 60vh;
   background-color: #147979; 
 }
 
@@ -200,19 +210,40 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
 
 /* Tarjeta producto catalogo*/
 
+.contenedor{
+  margin-top: 190px;
+  width: 220vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  /*background-color: red;*/
+}
+
+.catalogo_productos{
+  width: 30vh;
+  display:flex;
+  margin-left: 10px;
+  /*background-color: orange;*/
+}
+
+.prueba{
+  width: 35vh;
+  /*background-color: yellowgreen;*/
+  margin-left: 20px;
+}
+
 section {
-  --card-height: 240px;
+  --card-height: 260px;
   --card-width: calc(var(--card-height) / 1.5);
 }
 #catalogo{
   width: 100vw;
   height: 100vh;
   margin: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 5px 10px #000;
-  background: #147979;
+  background: orange;
 }
 
 .cardcatalogo {
@@ -224,8 +255,12 @@ section {
   align-items: flex-end;
   padding: 0 36px;
   perspective: 2500px;
-  margin: 0 50px;
+  margin: 30px 25px;
+  background-color: whitesmoke;
+}
 
+.cardbody{
+  width: 29vh;
 }
 
 .cover-image {
@@ -285,7 +320,6 @@ section {
   width: 160px;
   height: 500px;
   margin-bottom: 5px;
-  background-color: brown;
   left: 50px;
 }
 

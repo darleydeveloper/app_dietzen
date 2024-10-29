@@ -18,6 +18,7 @@ class ProductoFactory extends Factory
     {
         return [
             'nombre'=> fake()->word(),
+            'imagen'=> fake()->text(),
             'descripcion'=> fake()->text(),
             'precio'=> fake()->numberBetween(10000, 500000),
             'tiempo_de_entrega'=> fake()->numberBetween(1, 30),

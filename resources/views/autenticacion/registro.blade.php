@@ -32,10 +32,10 @@
                 </div>
                 {{-- Empresa --}}
                 <div class="form-control">
-                    <label Class="label" for="empresa">
+                    <label Class="label" for="nombre_empresa_o_club_deportivo">
                         <span class="label-text measureText">Nombre Empresa o Club Deportivo</span>
                     </label>
-                    <input type="text" name="empresa" placeholder="Mencione la empresa o Club deportivo en el que realiza un deporte" maxlength="255" class="input input-sm input-bordered" required autofocus value="{{old('empresa')}}" />
+                    <input type="text" name="nombre_empresa_o_club_deportivo" placeholder="Mencione la empresa o Club deportivo en el que realiza un deporte" maxlength="255" class="input input-sm input-bordered" required autofocus value="{{old('nombre_empresa_o_club_deportivo')}}" />
                 </div>
                 {{-- Telefono --}}
                 <div class="form-control">

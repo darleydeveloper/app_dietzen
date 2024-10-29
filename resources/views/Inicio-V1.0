@@ -1,0 +1,303 @@
+@extends('layouts.app')
+@section('titulo', 'DietzenStore')
+<!--@section('cabecera', '“CUMPLE TUS SUEÑOS, CORRE TRAS ELLOS, DIETZEN ESTÁ CONTIGO”')-->
+
+@section('contenido')
+
+<div class="tipoprenda">
+  <button class="custom-btn btn-12"><span>Ven a conocerlas</span><span>Novedades</span></button>
+  <button class="custom-btn btn-12"><span>Ven a conocerlas</span><span>Camisetas</span></button>
+  <button class="custom-btn btn-12"><span>Ven a conocerlos</span><span>Petos</span></button>
+  <button class="custom-btn btn-12"><span>Ven a conocerlas</span><span>Pantalonetas</span></button>
+  <button class="custom-btn btn-12"><span>Descubrelas</span><span>Lycras</span></button>
+  <button class="custom-btn btn-12"><span>Grandes Ofertas</span><span>Chaquetas</span></button>
+  <button class="custom-btn btn-12"><span>Desde $5000</span><span>Ofertas</span></button>
+</div>
+
+<div class="slider">
+  <div class="carousel w-full">
+    <div id="item1" class="carousel-item w-full">
+      <img 
+        src="{{asset('images/assets/banner_promocional.png')}}"
+        class="w-full" / >
+    </div>
+    <div id="item2" class="carousel-item w-full">
+        <iframe class="w-full" width="560" height="315" src="https://www.youtube.com/embed/8WcbEpDvrXw?si=fOFASzUAdSN5c8Tn?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div id="item3" class="carousel-item w-full">
+      <img
+        src="{{asset('images/assets/banner_promocional3.png')}}"
+        class="w-full" />
+    </div>
+    <div id="item4" class="carousel-item w-full">
+      <img
+        src="{{asset('images/assets/banner_promocional4.png')}}"
+        class="w-full" />
+    </div>
+  </div>
+  <div class="flex w-full justify-center gap-2 py-2">
+    <a href="#item1" class="btn btn-xs">1</a>
+    <a href="#item2" class="btn btn-xs">2</a>
+    <a href="#item3" class="btn btn-xs">3</a>
+    <a href="#item4" class="btn btn-xs">4</a>
+  </div>
+</div>
+<br>
+<br>
+<div class="bg-blue-100 my-4 text-center">
+  <div class="typing"><span>Envíos gratuitos por compras superiores a $XXXXXX</span></div>
+</div>
+<div class="disciplinas">
+  <div class="card">
+    <div class="face font">
+        <img src="{{ asset('images/assets/futbol_icono.avif')}}">
+        <h3>Futbol</h3>
+    </div>
+    <div class="face back">
+        <h4>Te ayudamos a lograr estilo y comodidad en...</h4>
+        <div class="link">
+          <a href="#">Camisetas</a><br>
+          <a href="#">Petos</a><br>
+          <a href="#">Pantalonetas</a><br>
+          <a href="#">Pantalones</a><br>
+          <a href="#">Lycras</a><br>
+          <a href="#">Chaquetas</a>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face font">
+        <img src="{{ asset('images/assets/basketball_icono.avif')}}">
+        <h3>Baloncesto</h3>
+    </div>
+    <div class="face back">
+        <h4>Te ayudamos a lograr estilo y comodidad en...</h4>
+        <div class="link">
+          <a href="#">Camisetas</a><br>
+          <a href="#">Petos</a><br>
+          <a href="#">Pantalonetas</a><br>
+          <a href="#">Pantalones</a><br>
+          <a href="#">Lycras</a><br>
+          <a href="#">Chaquetas</a>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face font">
+        <img src="{{ asset('images/assets/futsal_icono.avif')}}">
+        <h3>Futbol Sala</h3>
+    </div>
+    <div class="face back">
+        <h4>Te ayudamos a lograr estilo y comodidad en...</h4>
+        <div class="link">
+          <a href="#">Camisetas</a><br>
+          <a href="#">Petos</a><br>
+          <a href="#">Pantalonetas</a><br>
+          <a href="#">Pantalones</a><br>
+          <a href="#">Lycras</a><br>
+          <a href="#">Chaquetas</a>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face font">
+        <img src="{{ asset('images/assets/rugby_icono.avif')}}">
+        <h3>Rugby</h3>
+    </div>
+    <div class="face back">
+        <h4>Te ayudamos a lograr estilo y comodidad en...</h4>
+        <div class="link">
+          <a href="#">Camisetas</a><br>
+          <a href="#">Petos</a><br>
+          <a href="#">Pantalonetas</a><br>
+          <a href="#">Pantalones</a><br>
+          <a href="#">Lycras</a><br>
+          <a href="#">Chaquetas</a>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face font">
+        <img src="{{ asset('images/assets/tennis_icono.avif')}}">
+        <h3>Tennis</h3>
+    </div>
+    <div class="face back">
+        <h4>Te ayudamos a lograr estilo y comodidad en...</h4>
+        <div class="link">
+          <a href="#">Camisetas</a><br>
+          <a href="#">Petos</a><br>
+          <a href="#">Pantalonetas</a><br>
+          <a href="#">Pantalones</a><br>
+          <a href="#">Lycras</a><br>
+          <a href="#">Chaquetas</a>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face font">
+        <img src="{{ asset('images/assets/voleibol_icono.avif')}}">
+        <h3>Voleiball</h3>
+    </div>
+    <div class="face back">
+        <h4>Te ayudamos a lograr estilo y comodidad en...</h4>
+        <div class="link">
+          <a href="#">Camisetas</a><br>
+          <a href="#">Petos</a><br>
+          <a href="#">Pantalonetas</a><br>
+          <a href="#">Pantalones</a><br>
+          <a href="#">Lycras</a><br>
+          <a href="#">Chaquetas</a>
+        </div>
+    </div>
+  </div>
+</div>
+<!--CATÁLOGO DE PRODUCTOS-->
+<div class="contenedor">
+  <div class="catalogo_productos">
+    <div class="prueba">
+      <div class="cardcatalogo">
+        <div class="wrappercatalogo">
+        <img src="{{ asset('images/productos/pr_comunredondo.png')}}" class="cover-image">
+        </div>
+        <img src="{{ asset('images/productos/pr_COMUNREDONDO_back.png')}}" class="character">
+      </div>
+      <div class="cardbody">
+        <h2 class="card-title">Camiseta XxX</h2>
+        <div class="items-center text-center">$99999</div>
+        <div class="items-center text-center">
+        Elige tu talla<br>
+          <span class="btn btn-xs btn-default btn-filter is-checked" data-filter="">Xs</span>
+          <span class="btn btn-xs btn-default btn-filter" data-filter=".small">S</span>
+          <span class="btn btn-xs btn-default btn-filter" data-filter=".wide">M</span>
+          <span class="btn btn-xs btn-default btn-filter" data-filter=".big">L</span>
+          <span class="btn btn-xs btn-default btn-filter" data-filter=".tall">Xl</span>
+        </div>
+        <p>Descripcion,150</p>
+        <p>Informacion adicional,150</p>
+        <div class="items-center text-center stroke-current">
+          <div class="badge badge-outline">Etiqueta1</div>
+          <div class="badge badge-outline">Etiqueta2</div>
+        </div>
+        <div class="card-actions justify-end "><button class="btn btn-primary">Comprar</button></div>
+        <div>
+          <label for="my_modal_6" class="btn btn-outline btn-xs bg-error">Editar</label>
+          <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+          <div class="modal" role="dialog">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold">Aqui ingresara en rol administrador a la interfaz de administración de productos</h3>
+              <div class="modal-action">
+              <label for="my_modal_6" class="btn">Cerrar!</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label for="my_modal_6" class="btn btn-outline btn-xs bg-error">Eliminar</label>
+          <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+          <div class="modal" role="dialog">
+            <div class="modal-box">
+              <h3 class="text-lg font-bold">Aqui ingresara en rol administrador a la interfaz de administración de productos</h3>
+              <div class="modal-action">
+              <label for="my_modal_6" class="btn">Cerrar!</label>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>x
+    <div class="prueba">
+      <div class="cardcatalogo">
+        <div class="wrappercatalogo">
+        <img src="{{ asset('images/productos/pr_nuevofrente.png')}}" class="cover-image">
+        </div>
+        <img src="{{ asset('images/productos/pr_espalda_nuevoooback2.png')}}" class="character">
+      </div>
+      <div class="cardbody">
+        <h2 class="card-title">Camiseta VvV</h2>
+        <div class="items-center text-center">$99999</div>
+        <div class="items-center text-center">
+          <p>Elige tu talla</p>
+          <span class="btn btn-xs btn-default btn-filter is-checked" data-filter="">Xs</span>
+          <span class="btn btn-xs btn-default btn-filter" data-filter=".small">S</span>
+          <span class="btn btn-xs btn-default btn-filter" data-filter=".wide">M</span>
+          <span class="btn btn-xs btn-default btn-filter" data-filter=".big">L</span>
+          <span class="btn btn-xs btn-default btn-filter" data-filter=".tall">Xl</span>
+        </div>
+        <p>Descripcion,150</p>
+        <p>Informacion adicional,150</p>
+        <div class="items-center text-center stroke-current">
+          <div class="badge badge-outline">Etiqueta1</div>
+          <div class="badge badge-outline">Etiqueta2</div>
+        </div>
+        <div class="card-actions justify-end "><button class="btn btn-primary">Comprar</button></div>
+        <div>
+
+<!--<div class="contenedor">
+  <section id="catalogo">
+    <div class="catalogo_productos ">
+      <div class="prueba">
+        <div class="cardcatalogo">
+          <div class="wrappercatalogo">
+            <img src="{{ asset('images/productos/pr_RANGLAMV.png')}}" class="cover-image">
+          </div>
+          <img src="{{ asset('images/productos/pr_RANGLAMV_back.png')}}" class="character">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Nombre</h2>
+          <div class="badge badge-outline">$99999</div>
+          <div>
+            <span class="btn btn-xs btn-default btn-filter is-checked" data-filter="">Xs</span>
+            <span class="btn btn-xs btn-default btn-filter" data-filter=".small">S</span>
+            <span class="btn btn-xs btn-default btn-filter" data-filter=".wide">M</span>
+            <span class="btn btn-xs btn-default btn-filter" data-filter=".big">L</span>
+            <span class="btn btn-xs btn-default btn-filter" data-filter=".tall">Xl</span>
+          </div>
+          <p>Descripcion,150</p>
+          <p>Informacion adicional,150</p>
+          <div class=""inline-block h-4 w-4 stroke-current"">
+          <div class="badge badge-outline">Etiqueta1</div>
+          <div class="badge badge-outline">Etiqueta2</div>
+          </div>
+          <div>
+            <div>
+            <label for="my_modal_6" class="btn btn-outline btn-xs bg-error">Eliminar</label>
+            <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+            <div class="modal" role="dialog">
+              <div class="modal-box">
+                <h3 class="text-lg font-bold">Aqui ingresara en rol administrador a la interfaz de administración de productos</h3>
+                <div class="modal-action">
+                  <label for="my_modal_6" class="btn">Cerrar!</label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-outline btn-xs bg-error">Editar</button>
+          </div>
+        </div>
+</div>
+
+@endsection
+
+
+****************************************************************************************
+CINTILLA DE INFORMACIÓN
+
+        {{-- Título Cabecera --}}
+        <div class="bg-blue-100 my-4 text-center">
+            <div class="typing"><span>@yield('cabecera')</span></div>
+        </div>
+
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  Colores catálogo
+
+  .cardcatalogo:hover .wrappercatalogo {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+
+
+  !--"badge badge-primary badge-outline m-4"-->
+
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

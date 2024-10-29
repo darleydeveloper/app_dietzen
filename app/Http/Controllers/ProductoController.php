@@ -13,7 +13,7 @@ class ProductoController extends Controller
      */
     public function index()
     {
-        $productos = Producto::all();
+        $productos = Producto::with(relations:'categoria')->get();/**Producto::all();*/
         return view('productos.index', ['productos' => $productos]);
     }
 
@@ -22,12 +22,7 @@ class ProductoController extends Controller
      */
     public function create()
     {
-        $categorias = Categoria::orderBy('nombre')->get();
-        //si no existen categorias, redirigir a la vista de creación de categorias
-        if ($categorias->isEmpty()) {
-            return redirect()->route('categorias.create')->with('info', 'Primero debes crear una categoría');
-        }
-        return view('productos.create', ['categorias' => $categorias]);
+       return view('productos.create');
     }
 
     /**
@@ -56,7 +51,6 @@ class ProductoController extends Controller
      */
     public function edit(Producto $producto)
     {
-        $categorias = Categoria::all();
         return view('productos.edit', ['producto' => $producto, 'categorias' => $categorias]);
     }
 

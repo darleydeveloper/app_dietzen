@@ -14,16 +14,18 @@ return new class extends Migration
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->text('imagen')->nullable();
             $table->string('descripción')->nullable(); 
             $table->integer('precio');
             $table->integer('tiempo_de_entrega')->nullable();
             $table->string('informacion_adicional')->nullable();
             $table->string('etiqueta1');
             $table->string('etiqueta2');
-            $table->foreignId('categoria_id')->constrained();
+            $table->foreignId('categoria_id')->constrained()->on('categorias');
         });
     }
 
+    
     /**
      * Reverse the migrations.
      */

@@ -1,8 +1,4 @@
-@extends('layouts.app')
-@section('titulo', 'Nuestros Productos')
-@section('cabecera', 'Listar Productos')
-
-@section('contenido')
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     <div class="flex justify-end m-4">
         <a href="{{ route('productos.create') }}" class="btn btn-outline btn-sm">Crear Producto</a>
     </div>
@@ -290,30 +286,3 @@
         </div>
 
 @endsection
-
-
-
-
-<div>
-          <label for="my_modal_6" class="btn btn-outline btn-xs bg-error">Eliminar</label>
-          <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-          <div class="modal" role="dialog">
-            <div class="modal-box">
-              <h3 class="text-lg font-bold">Aqui ingresara en rol administrador a la interfaz de administración de productos</h3>
-              <div class="modal-action">
-                <label for="my_modal_6" class="btn">Cerrar!</label>
-              </div>
-            </div>
-          </div>
-          <div>
-          <label for="my_modal_6" class="btn btn-outline btn-xs bg-error">Editar</label>
-          <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-          <div class="modal" role="dialog">
-            <div class="modal-box">
-              <h3 class="text-lg font-bold">Aqui ingresara en rol administrador a la interfaz de administración de productos</h3>
-              <div class="modal-action">
-                <label for="my_modal_6" class="btn">Cerrar!</label>
-              </div>
-            </div>
-          </div>
-        </div>
