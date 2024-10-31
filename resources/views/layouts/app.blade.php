@@ -17,8 +17,10 @@
         <div class="tipoprenda">
         <button class="custom-btn btn-12"><span>@yield('invitacionPrenda')</span><span>@yield('tipoPrenda')</span></button>
         </div>
+        
         {{-- Contenido --}}
         @yield('contenido')
+
     </main>
         {{-- Cinta promocional --}}
         <div class="bg-blue-100 my-4 text-center">

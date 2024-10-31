@@ -20,6 +20,7 @@ class ProductoFactory extends Factory
             'nombre'=> fake()->word(),
             'imagen'=> fake()->text(),
             'descripcion'=> fake()->text(),
+            'talla'=> fake()->text(),
             'precio'=> fake()->numberBetween(10000, 500000),
             'tiempo_de_entrega'=> fake()->numberBetween(1, 30),
             'informacion_adicional'=> fake()->text(),

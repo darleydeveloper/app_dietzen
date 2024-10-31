@@ -7,11 +7,11 @@
         <div class="card w-96 shadow-2xl bg-base-100">
             <div class="card-body">
                 {{-- Formulario para crear producto --}}
-                    <!--<form action="{{ route('productos.destroy', $producto->id) }}" method="POST">
+                    <form action="{{ route('productos.destroy', $producto->id) }}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-outline btn-xs">Eliminar</button>
-                    </form>-->
+                    </form>
 
                 <form action="{{route('productos.store')}}" method="POST" enctype="multipart/form-data">
                     @csrf

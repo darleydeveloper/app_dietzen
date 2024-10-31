@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nombre');
             $table->text('imagen')->nullable();
             $table->string('descripción')->nullable(); 
+            $table->string('talla');
             $table->integer('precio');
             $table->integer('tiempo_de_entrega')->nullable();
             $table->string('informacion_adicional')->nullable();

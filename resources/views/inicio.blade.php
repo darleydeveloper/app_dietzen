@@ -6,43 +6,43 @@
 
 <!-- Botonera de categorías por tipo de prenda -->
 
-<div class="contenedor_botonera--TipoPrenda">
-  <button class="custom-btn btn-12"><span>Ven a conocerlas</span><span>Novedades</span></button>
-  <button class="custom-btn btn-12"><span>Ven a conocerlas</span><span>Camisetas</span></button>
-  <button class="custom-btn btn-12"><span>Ven a conocerlos</span><span>Petos</span></button>
-  <button class="custom-btn btn-12"><span>Ven a conocerlas</span><span>Pantalonetas</span></button>
-  <button class="custom-btn btn-12"><span>Descubrelas</span><span>Lycras</span></button>
-  <button class="custom-btn btn-12"><span>Grandes Ofertas</span><span>Chaquetas</span></button>
-  <button class="custom-btn btn-12"><span>Desde $5000</span><span>Ofertas</span></button>
-</div>
-
-<!-- Carousel Promocional-->
-<div class="slider">
-  <div class="w-full">
-      <div id="item1" class="carousel-item w-full">
-          <img src="{{asset('images/assets/banner_promocional.png')}}" class="w-full" / >
-      </div>
-      <div id="item2" class="carousel-item w-full">
-        <iframe class="w-full" width="560" height="315" src="https://www.youtube.com/embed/8WcbEpDvrXw?si=fOFASzUAdSN5c8Tn?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div id="item3" class="carousel-item w-full">
-          <img src="{{asset('images/assets/banner_promocional3.png')}}" class="w-full" / >
-      </div>
-      <div id="item4" class="carousel-item w-full">
-          <img src="{{asset('images/assets/banner_promocional4.png')}}" class="w-full" / >
-      </div>
+  <div class="contenedor_botonera--TipoPrenda">
+    <button class="custom-btn btn-12"><span>Ven a conocerlas</span><span>Novedades</span></button>
+    <button class="custom-btn btn-12"><span>Ven a conocerlas</span><span>Camisetas</span></button>
+    <button class="custom-btn btn-12"><span>Ven a conocerlos</span><span>Petos</span></button>
+    <button class="custom-btn btn-12"><span>Ven a conocerlas</span><span>Pantalonetas</span></button>
+    <button class="custom-btn btn-12"><span>Descubrelas</span><span>Lycras</span></button>
+    <button class="custom-btn btn-12"><span>Grandes Ofertas</span><span>Chaquetas</span></button>
+    <button class="custom-btn btn-12"><span>Desde $5000</span><span>Ofertas</span></button>
   </div>
-  <div class="flex w-full justify-center gap-2 py-2">
-      <a href="#item1" class="btn btn-xs">1</a>
-      <a href="#item2" class="btn btn-xs">2</a>
-      <a href="#item3" class="btn btn-xs">3</a>
-      <a href="#item4" class="btn btn-xs">4</a>
+
+  <!-- Carousel Promocional-->
+  <div class="slider">
+    <div class="w-full">
+        <div id="item1" class="carousel-item w-full">
+            <img src="{{asset('images/assets/banner_promocional.png')}}" class="w-full" / >
+        </div>
+        <div id="item2" class="carousel-item w-full">
+          <iframe class="w-full" width="560" height="315" src="https://www.youtube.com/embed/8WcbEpDvrXw?si=fOFASzUAdSN5c8Tn?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="item3" class="carousel-item w-full">
+            <img src="{{asset('images/assets/banner_promocional3.png')}}" class="w-full" / >
+        </div>
+        <div id="item4" class="carousel-item w-full">
+            <img src="{{asset('images/assets/banner_promocional4.png')}}" class="w-full" / >
+        </div>
+    </div>
+    <div class="flex w-full justify-center gap-2 py-2">
+        <a href="#item1" class="btn btn-xs">1</a>
+        <a href="#item2" class="btn btn-xs">2</a>
+        <a href="#item3" class="btn btn-xs">3</a>
+        <a href="#item4" class="btn btn-xs">4</a>
+    </div>
   </div>
-</div>
 
-<!-- Botonera por Disciplinas Deportivas -->
+  <!-- Botonera por Disciplinas Deportivas -->
 
-<div class="contenedor_disciplinasDeportivas">
+  <div class="contenedor_disciplinasDeportivas">
   <div class="card">
     <div class="face font">
       <img src="{{ asset('images/assets/futbol_icono.avif')}}">
@@ -145,13 +145,13 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
 
-<!--CATÁLOGO DE PRODUCTOS-->
+  <!--CATÁLOGO DE PRODUCTOS-->
 
-@foreach($productos as $producto)
+  @foreach($productos as $producto)
 
-  <div class="contenedor_catalogoProductos">
+    <div class="contenedor_catalogoProductos">
     <div class="catalogo_productos">
       <div class="prueba">
         <div class="cardcatalogo">
@@ -203,11 +203,9 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
 
-@endforeach
-
-
+  @endforeach
 
 
 @endsection
