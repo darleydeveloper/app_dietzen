@@ -23,7 +23,7 @@
                 <div class="badge badge-outline h-4 w-4 stroke-current">{{ $producto->etiqueta2 }}</div>
             </div>
             <div class="card-actions-justify-end">
-                <a href="{{ route('productos.edir', $producto->id) }}" class="btn btn-outline btn-xs">Editar</a>
+                <a href="{{ route('productos.edit', $producto->id) }}" class="btn btn-outline btn-xs">Editar</a>
                 <form action="{{ route('productos.destroy', $producto->id) }}" method="POST">
                     @csrf
                     @method('DELETE')

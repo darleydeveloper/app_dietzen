@@ -13,11 +13,7 @@
     </header>
     <main>
 
-        {{-- Botonera Tipo Prenda --}}
-        <div class="tipoprenda">
-        <button class="custom-btn btn-12"><span>@yield('invitacionPrenda')</span><span>@yield('tipoPrenda')</span></button>
-        </div>
-        
+       
         {{-- Contenido --}}
         @yield('contenido')
 

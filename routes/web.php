@@ -41,3 +41,11 @@ Route::put('/perfil/{user}', [AutenticaController::class, 'perfilUpdate'])->name
 //Ruta para cambiar la contraseña de usuario
 Route::put('/perfil/password/{user}', [AutenticaController::class, 'passwordUpdate'])->name('password.update');
 
+//Ruta para carrito de compras
+//Route::get('/', [App\Http\Controllers\FrontController::class, 'index']);//Para mostrar productos
+//Route::post('cart/add', [App\Http\Controllers\CartController::class, 'add'])->name('add');//Para agregar productos
+//Route::get('cart/checkout', [App\Http\Controllers\CartController::class, 'checkout'])->name('checkout');//Para visualizar el carrito
+//Route::get('cart/clear', [App\Http\Controllers\CartController::class, 'clear'])->name('clear');//Para vaciar carrito de compra
+//Route::post('cart/removeitem', [App\Http\Controllers\CartController::class, 'removeItem'])->name('removeitem');//Para envío de información al servidor
+
+

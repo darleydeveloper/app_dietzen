@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Producto extends Model
 {
     use HasFactory;
-    protected $fillable = ['nombre', 'imagen', 'descripcion', 'talla', 'precio', 'tiempo_de_entrega', 'informacion_adicional', 'etiqueta1', 'etiqueta2', 'categoria_id'];
+    protected $fillable = ['nombre', 'referencia_del_producto', 'imagen', 'descripcion', 'genero', 'talla', 'precio', 'tiempo_de_entrega', 'informacion_adicional', 'etiqueta1', 'etiqueta2', 'categoria_id'];
     public $timestamps = false;  //aquí un cambio, introduje este comando 
 
     public function categoria()

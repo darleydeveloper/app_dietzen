@@ -15,13 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('nombre_empresa_o_club_deportivo');
             $table->string('número_de_teléfono_de_contacto')->unique();
             $table->string('disciplina_deportiva_que_practica');
             $table->string('dirección');
-            $table->string('contraseña');
             $table->string('rol');
+            $table->string('pasword');
             $table->rememberToken();
             $table->timestamps();
         });

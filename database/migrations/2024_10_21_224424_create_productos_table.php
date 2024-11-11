@@ -14,11 +14,13 @@ return new class extends Migration
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->text('imagen')->nullable();
-            $table->string('descripción')->nullable(); 
+            $table->string('referencia_del_producto')->nullable();//ingrese este nuevo atributo
+            $table->text('imagen')->nullable();//aqui cambie el tipo de dato de text a string
+            $table->string('descripción')->nullable();
+            $table->string('genero')->nullable();
             $table->string('talla');
             $table->integer('precio');
-            $table->integer('tiempo_de_entrega')->nullable();
+            $table->string('tiempo_de_entrega')->nullable();
             $table->string('informacion_adicional')->nullable();
             $table->string('etiqueta1');
             $table->string('etiqueta2');

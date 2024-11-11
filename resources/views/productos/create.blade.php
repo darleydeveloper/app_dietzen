@@ -34,7 +34,15 @@
                         <input type="text" name="nombre" placeholder="Nombre del producto" maxlength="100" class="input input-bordered" value="{{old('nombre')}}" required />
                     </div>
                      {{-- Imagen --}}
-                     <div class="form-control">
+                    <!--CRUD IMAGEN 31/10-->
+
+                    <form action="{{ route('productos.destroy', $producto->id) }}" enctype="multipart/form" method="POST">
+                    @csrf
+                        <input type="file" name="imagen"/>
+                        <input type="submit" value="Registrar" class="btn btn-error"Registrar/>
+                    </form>
+                    </div>
+                     <!--<div class="form-control">
                         <label class="label" for="imagen">
                             <span class="label-text">Imagen</span>
                         </label>

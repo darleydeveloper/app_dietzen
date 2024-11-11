@@ -17,7 +17,7 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = ['name', 'email', 'password', 'email_verified_at', 'nombre_empresa_o_club_deportivo', 'número_de_teléfono_de_contacto', 'disciplina_deportiva_que_practica', 'dirección', 'contraseña', 'rol'];
+    protected $fillable = ['nombre', 'email', 'nombre_empresa_o_club_deportivo', 'número_de_teléfono_de_contacto', 'disciplina_deportiva_que_practica', 'dirección', 'pasword', 'rol'];
 
     /**
      * The attributes that should be hidden for serialization.

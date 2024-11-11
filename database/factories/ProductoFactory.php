@@ -18,15 +18,17 @@ class ProductoFactory extends Factory
     {
         return [
             'nombre'=> fake()->word(),
+            'referencia_del_producto'=> fake()->word(),
             'imagen'=> fake()->text(),
-            'descripcion'=> fake()->text(),
-            'talla'=> fake()->text(),
+            'descripcion'=> fake()->word(),
+            'genero'=> fake()->word(),
+            'talla'=> fake()->word(),
             'precio'=> fake()->numberBetween(10000, 500000),
             'tiempo_de_entrega'=> fake()->numberBetween(1, 30),
             'informacion_adicional'=> fake()->text(),
             'etiqueta1'=> fake()->word(),
             'etiqueta2'=> fake()->word(),
-            'categoria_id'-> fake()->numberBetween(1, 10)
+            'categoria_id'=> fake()->numberBetween(1, 30)
         ];
     }
 }
